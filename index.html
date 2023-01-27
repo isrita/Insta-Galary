@@ -1,1 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0c2e81be21.js" crossorigin="anonymous"></script>
+    <link href="/styles.css" rel="stylesheet">
+    <title>Instagram</title>
+</head>
+<styles display:flex;
+        width:472px;
+        align-items: center ;> </styles>
+
+<body>
+    <br>
+    <div class="container-fluid text-center">
+        <div class="row bg-secondary-subtle">
+            <div class="col-1">
+                <i class="fa-brands fa-instagram fa-xl "></i>
+                <label>Instagram</label>
+            </div>
+            <div class="col-2 offset-sm-8  text-end">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Create a new post</button>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="create_post">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-start">Caption:</p>
+                                <textarea class="form-control" id="message-text"
+                                    placeholder="Add the caption of your post here"></textarea>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class=" mb-1 ms-3 py-1 col-1 bg-light border border-secondary-subtle rounded">
+                                        <i class="fa-solid fa-camera text-center"></i>
+                                    </div>
+                                    <div class=" mb-1 ms-3 py-1 col-1 bg-light border border-secondary-subtle rounded">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 text-start">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item border-bottom border-secondary" href="#">Privacy and Data</a>
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 mx-auto">
+                <ul class="nav nav-pills mb-3 justify-content-md-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false"><i class="fa-solid fa-square"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content" id="v-pills-tabcontent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0"  >
+                <div class="row grid gap-1 justify-content-md-center">
+                    <div class="col-3" >
+                        <img class="object-fit-cover img-fluid h-100" width="500px" height="500px" margin-low="10px" margin-left="10px"
+                        displey="flex"
+                           src="https://upload.wikimedia.org/wikipedia/commons/3/38/La_Playita_de_Puerto_Real%2C_Cabo_Rojo.jpg">
+                    </div>
+                    <div class="col-3 ">
+                        <img class="object-fit-fill img-fluid h-100" width="500px" height="500px" margin-low="10px" margin-left="10px"
+                            src="https://www.ecured.cu/images/2/29/Surf3.jpg">
+                    </div>
+                    <div class="col-3">
+                        <img class="object-fit-cover img-fluid h-100" width="500px" height="500px" margin-low="10px" margin-left="10px"
+                            src="https://gestion.pe/resizer/U0acIV99ICiNpUEeThegisA49Ks=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/3JKEBPJGKFG7DLRXGGVYAJG4NY.jpg">
+                    </div>
+                </div>
+                    <div class="row grid gap-1 justify-content-md-center">
+                        <div class="col-3">
+                            <img class="object-fit-cover img-fluid h-100" width="500px" height="500px" margin-low="10px" margin-left="10px"
+                                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Miraflores-Lima...jpg/800px-Miraflores-Lima...jpg">
+                        </div>
+                        <div class="col-3 ">
+                            <img class="object-fit-cover img-fluid h-100" width="500px" height="500px"
+                                src="https://farm5.staticflickr.com/4548/38605013496_df583c5d89_c.jpg">
+                        </div>
+                        <div class="col-3 ">
+                            <img class="object-fit-cover img-fluid h-100" width="500px" height="500px"
+                                src="https://assets-es.imgfoot.com/media/cache/1200x1200/lionel-messi-2223-goat.jpg">
+                        </div>
+                    </div>
+                    <div class="row grid gap-1 justify-content-md-center">
+                        <div class="col-3">
+                            <img class="object-fit-cover img-fluid h-100" width="500px" height="500px"
+                                src="https://www.gritodarua.com.br/wp-content/uploads/2021/07/Luiz-Francisco-1200x996.jpeg">
+                        </div>
+                        <div class="col-3">
+                            <img class="object-fit-cover img-fluid h-100" width="500px" height="500px"
+                                src="https://static.wixstatic.com/media/f3c2e6_565dda3166654cdc8805e508d1d3af85~mv2.jpeg/v1/fill/w_640,h_626,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/f3c2e6_565dda3166654cdc8805e508d1d3af85~mv2.jpeg">
+                        </div>
+                        <div class="col-3">
+                            <img class="object-fit-cover img-fluid h-100" width="500px" height="500px"
+                                src="https://i1.adis.ws/i/canon/canon-pro-ben-thouard-surfing-eos-1d-x-mark-iii-1-1140x760?w=1140&qlt=70&fmt=jpg&fmt.options=interlaced&bg=rgb(255,255,255)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="container-fluid">
+                <div class="row p-2 justify-content-md-center">
+                    <div class="col-4 bg-light">
+                        <div class="row">
+                            <p class="text-start col-8">New beach!! </p>
+                            <label class="text-end col-4">08/26</label>
+                        </div>
+                        <img class="object-fit-cover img-fluid" width="550px" height="550px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/38/La_Playita_de_Puerto_Real%2C_Cabo_Rojo.jpg">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold text-start">204 Likes</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-start">This is an example of a very good photo that you can post on
+                                    Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 justify-content-md-center">
+                    <div class="col-4 bg-light">
+                        <div class="row">
+                            <p class="text-start col-8">In the barrel</p>
+                            <label class="text-end col-4">04/14</label>
+                        </div>
+                        <img class="object-fit-cover img-fluid" width="550px" height="550px"
+                            src="https://www.ecured.cu/images/2/29/Surf3.jpg">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold text-start">248 Likes</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-start">This is an example of a very good photo that you can post on
+                                    Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 justify-content-md-center">
+                    <div class="col-4 bg-light">
+                        <div class="row">
+                            <p class="text-start col-8">Surfing is my passion</p>
+                            <label class="text-end col-4">04/12</label>
+                        </div>
+                        <img class="object-fit-cover img-fluid" width="550px" height="550px"
+                            src="https://gestion.pe/resizer/U0acIV99ICiNpUEeThegisA49Ks=/1200x1200/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/3JKEBPJGKFG7DLRXGGVYAJG4NY.jpg">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold text-start">654 Likes</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-start">This is an example of a very good photo that you can post on
+                                    Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 justify-content-md-center">
+                    <div class="col-4 bg-light">
+                        <div class="row">
+                            <p class="text-start col-8">My favorite place in the world!</p>
+                            <label class="text-end col-4">04/12</label>
+                        </div>
+                        <img class="object-fit-cover img-fluid" width="550px" height="550px"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Miraflores-Lima...jpg/800px-Miraflores-Lima...jpg">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold text-start">854 Likes</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-start">This is an example of a very good photo that you can post on
+                                    Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row p-2 justify-content-md-center">
+                    <div class="col-4 bg-light">
+                        <div class="row">
+                            <p class="text-start col-8">Mystical bridge</p>
+                            <label class="text-end col-4">04/12</label>
+                        </div>
+                        <img class="object-fit-cover img-fluid" width="550px" height="550px"
+                            src="https://farm5.staticflickr.com/4548/38605013496_df583c5d89_c.jpg">
+                        <div class="row">
+                            <div class="col">
+                                <p class="fw-bold text-start">994 Likes</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-start">This is an example of a very good photo that you can post on
+                                    Instagram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
